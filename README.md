@@ -2,7 +2,7 @@
 Automatically sorts files and folders in a parent directory into separate folders and organizes files by extension.
 
 ## Roadmap
-*Already planed features.*
+### *Already planed features.*
 -   Ignores browser download artifacts (.part, .crdownload, etc.)
 -   Wait for files to finish downloading/copying before acting
 -   Match files by extension, glob patterns, regex, size, or content
@@ -11,8 +11,8 @@ Automatically sorts files and folders in a parent directory into separate folder
 
 
 ## Configuration
-
-    {
+```json
+{
     
     "relative-folder": "true",
     
@@ -20,8 +20,8 @@ Automatically sorts files and folders in a parent directory into separate folder
     
     "folder-location": "../Folders"
     
-    }
-
+}
+```
 "relative-folder": "true" → paths are relative to the script’s parent folder.
 "false" → paths are treated as absolute or relative to the current working directory.
 "file-location": location of the main file folder.
@@ -29,28 +29,42 @@ Automatically sorts files and folders in a parent directory into separate folder
 
 ## Usage
 
-1. Open terminal in the Source folder.
+### Watcher
+1. Open terminal in the source folder.
+
 2. Run the watcher:
-		
 
-    node index.js
+	```shell
+	node index.js
+ 	```
 
-3. Drop files or folders into the parent directory (one level above Source).
-   
 
-*Files will be moved into Files/ and sorted by extension.*
+4. Drop files or folders into the parent directory (one level above Source).
 
-*Folders will be moved into Folders/.*
+### Once
+
+1. Open terminal in the source folder.
+
+2. Run it with the once flag:
+
+	```shell
+	node index.js --once
+ 	```
+
+3. Sit back and watch as the parent folder get sorted.
+
+<br/>
+
+> *Files will be moved into Files/ and sorted by extension.*
+
+> *Folders will be moved into Folders/.*
+
 
 ## Notes:
 
 
-- Existing folders with the same name in Folders/ will be renamed
+- Existing folders with the same name in Folders/ will be renamed automatically (e.g., Folder_1).
 
-automatically (e.g., Folder_1).
+- Files without extensions are placed in Files/NO_EXTENSION/.
 
-- Files without extensions are placed
-
-in Files/NO_EXTENSION/.
-
-- The watcher ignores the Source/ folder.
+- The folder holding the code is ignored.

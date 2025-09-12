@@ -13,7 +13,7 @@ const baseDir = cfg["relative-folder"] === "true"
 
 const filesDir = path.resolve(baseDir, cfg["file-location"]);
 const foldersDir = path.resolve(baseDir, cfg["folder-location"]);
-const sourceDir = path.resolve("./"); // the "Source" folder
+const sourceDir = path.resolve("./"); // the "source" folder
 
 /// --------- Helpers ---------
 async function handleEntry(entryPath, stats) {

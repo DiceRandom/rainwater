@@ -36,10 +36,11 @@ Automatically sorts files and folders in a parent directory into separate folder
     node index.js
 
 3. Drop files or folders into the parent directory (one level above Source).
+   
 
-*Files will be moved into Files/ and sorted by extension.
+*Files will be moved into Files/ and sorted by extension.*
 
-Folders will be moved into Folders/.*
+*Folders will be moved into Folders/.*
 
 ## Notes:
 

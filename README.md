@@ -36,7 +36,7 @@ Automatically sorts files and folders in a parent directory into separate folder
 2. Run the script:
    
 	```shell
-	node locations.js
+	node addLocations.js
  	```
 
 3. This will let you populate the locations for the watcher to look out for.

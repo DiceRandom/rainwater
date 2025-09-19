@@ -1,6 +1,0 @@
-{
-  "type": "module",
-  "dependencies": {
-    "chokidar": "^4.0.3"
-  }
-}

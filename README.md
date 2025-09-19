@@ -22,36 +22,34 @@ Automatically sorts files and folders in a parent directory into separate folder
     
 }
 ```
-"relative-folder": "true" → paths are relative to the script’s parent folder.
-"false" → paths are treated as absolute or relative to the current working directory.
-"file-location": location of the main file folder.
-"folder-location": location of the main folders directory.
+-   "relative-folder": "true" → paths are relative to the script’s parent folder.
+-   "false" → paths are treated as absolute or relative to the current working directory.
+-   "file-location": location of the main file folder.
+-   "folder-location": location of the main folders directory.
 
 ## Usage
 
-### Watcher
+### Locations
+
 1. Open terminal in the source folder.
 
-2. Run the watcher:
+2. Run the script:
+   
+	```shell
+	node locations.js
+ 	```
+
+3. This will let you populate the locations for the watcher to look out for.
+
+4. Run the watcher:
 
 	```shell
 	node index.js
  	```
 
 
-4. Drop files or folders into the parent directory (one level above Source).
+5. Drop files or folders into the directory.
 
-### Once
-
-1. Open terminal in the source folder.
-
-2. Run it with the once flag:
-
-	```shell
-	node index.js --once
- 	```
-
-3. Sit back and watch as the parent folder get sorted.
 
 <br/>
 
@@ -67,4 +65,4 @@ Automatically sorts files and folders in a parent directory into separate folder
 
 - Files without extensions are placed in Files/NO_EXTENSION/.
 
-- The folder holding the code is ignored.
+- The folder holding the code is always ignored.
